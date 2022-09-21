@@ -14,6 +14,7 @@ public class ParameterStringBuilder {
             result.append("&");
         }
 
+        
         String resultString = result.toString();
         return resultString.length() > 0
                 ? resultString.substring(0, resultString.length() - 1)

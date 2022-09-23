@@ -19,10 +19,10 @@ public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        int countOfDays = Integer.parseInt(input.split(", ")[1]);
 
         try{
             Country country = getCountry(input.split(", ")[0].replace(" ","%20"));
+            int countOfDays = Integer.parseInt(input.split(", ")[1]);
             String starttime = getDate(countOfDays);
             String urlString = addParameters(country, starttime);
 
@@ -76,7 +76,6 @@ public class Main {
         ArrayList<Earthquake> earthquakes = new ArrayList<>();
         JSONObject contentJson = new JSONObject(content);
         JSONArray features = contentJson.getJSONArray("features");
-
 
         for(Object feature : features){
             try{

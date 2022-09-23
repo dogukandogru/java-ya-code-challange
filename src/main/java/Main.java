@@ -22,14 +22,14 @@ public class Main {
         int countOfDays = Integer.parseInt(input.split(", ")[1]);
 
         try{
-            Country country = getCountry(input.split(", ")[0]);
+            Country country = getCountry(input.split(", ")[0].replace(" ","%20"));
             String starttime = getDate(countOfDays);
             String urlString = addParameters(country, starttime);
 
             String content = sendHttpRequest(urlString);
 
             ArrayList<Earthquake> earthquakes = getEarthquakes(content, country);
-            printEarthquakes(earthquakes);
+            printEarthquakes(earthquakes, countOfDays);
         }
         catch (MalformedURLException e){
             System.out.println("URL is malformed!");
@@ -119,17 +119,22 @@ public class Main {
         return localDateTime.minusDays(countOfDays).format(DateTimeFormatter.ISO_LOCAL_DATE);
     }
 
-    private static void printEarthquakes(ArrayList<Earthquake> earthquakes){
-        System.out.println("Country\t|\tPlace of Earthquake\t|\tMagnitude\t|\tDate\t|\tTime");
-        System.out.println("-------------------------------------------------------------------------------------");
+    private static void printEarthquakes(ArrayList<Earthquake> earthquakes, int countOfDays){
+        if(earthquakes.size() == 0){
+            System.out.println(String.format("No Earthquakes were recorded past %s days", countOfDays));
+        }
+        else{
+            System.out.println("Country\t|\tPlace of Earthquake\t|\tMagnitude\t|\tDate\t|\tTime");
+            System.out.println("-------------------------------------------------------------------------------------");
 
-        for(Earthquake earthquake : earthquakes){
-            System.out.print(earthquake.getCountry() + "\t|\t");
-            System.out.print(earthquake.getPlace() + "\t|\t");
-            System.out.print(earthquake.getMagnitude() + "\t|\t");
-            System.out.print(earthquake.getDate() + "\t|\t");
-            System.out.print(earthquake.getTime() + "\t\t");
-            System.out.println();
+            for(Earthquake earthquake : earthquakes){
+                System.out.print(earthquake.getCountry().replace("%20", " ") + "\t|\t");
+                System.out.print(earthquake.getPlace() + "\t|\t");
+                System.out.print(earthquake.getMagnitude() + "\t|\t");
+                System.out.print(earthquake.getDate() + "\t|\t");
+                System.out.print(earthquake.getTime() + "\t\t");
+                System.out.println();
+            }
         }
     }
 }

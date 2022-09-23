@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de8127ec-ce29-4a39-8e15-e378d5bf3798" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yacodechallange/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yacodechallange/ParameterStringBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ParameterStringBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yacodechallange.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yacodechallange.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CoordinatesOfCountry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663927851484</updated>
-      <workItem from="1663927852802" duration="2086000" />
+      <workItem from="1663927852802" duration="3588000" />
     </task>
     <servers />
   </component>

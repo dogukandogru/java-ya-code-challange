@@ -28,7 +28,7 @@ Count of days:  Earthquakes of a given Country for the past {x} days
   `Country	|	Place of Earthquake	|	Magnitude	|	Date	|	Time`\
   `Turkey	|	eastern Turkey	|	4.8	|	2022-09-16	|	23:30:36.971`\
   `Turkey	|	Western Turkey	|	4.3	|	2022-09-05	|	16:45:56.17`\
-  `Turkey	|	eastern Turkey	|	4.3	|	2022-09-05	|	11:49:15.761`\		
+  `Turkey	|	eastern Turkey	|	4.3	|	2022-09-05	|	11:49:15.761`		
 	
 - Input:\
   `New Zeland, 10`
